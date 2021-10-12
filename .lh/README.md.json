@@ -3,11 +3,27 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1633889825927,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1633976832770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,35 @@\n # todolist_flutter\r\n \r\n A new Flutter project.\r\n \r\n-## Getting Started\r\n+## make Task Screen\r\n+1-make circle Avatar to make round container and put in it list icon\r\n \r\n+2-there is text and styling it make fontWeight is W700\r\n \r\n+-- wrap them in cloumn then in container to put padding and other things\r\n+Container(\r\n+        padding: EdgeInsets.only(left: 30, top: 60, right: 30, bottom: 30),\r\n+        child: Column(\r\n+          crossAxisAlignment: CrossAxisAlignment.start.\r\n \r\n-A few resources to get you started if this is your first Flutter project:\r\n+3-make container to make semi round from top by using prperty of decoration -->/\r\n+decoration: BoxDecoration(\r\n+                    color: Colors.white,\r\n+                    borderRadius: BorderRadius.only(\r\n+                      topLeft: Radius.circular(15),\r\n+                      topRight: Radius.circular(15),\r\n+                    )).\r\n+note --> don't put proerty out of decoration if it exists because if it is outside is shortcut of box decoration which means can't be existed at same time\r\n \r\n-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)\r\n-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)\r\n+4-put this container in extended widget to fulfil the parent widget\r\n \r\n-For help getting started with Flutter, view our\r\n-[online documentation](https://flutter.dev/docs), which offers tutorials,\r\n-samples, guidance on mobile development, and a full API reference.\r\n+5-use Sized to speparete between two Containers\r\n+ SizedBox(\r\n+              height: 30,\r\n+            ). \r\n+\r\n+\r\n+\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1633977006625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \r\n A new Flutter project.\r\n \r\n ## make Task Screen\r\n+\r\n 1-make circle Avatar to make round container and put in it list icon\r\n \r\n 2-there is text and styling it make fontWeight is W700\r\n \r\n@@ -26,10 +27,5 @@\n \r\n 5-use Sized to speparete between two Containers\r\n  SizedBox(\r\n               height: 30,\r\n-            ). \r\n-\r\n-\r\n-\r\n-\r\n-\r\n+            ).\r\n"
+                },
+                {
+                    "date": 1634035036582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,4 +28,12 @@\n 5-use Sized to speparete between two Containers\r\n  SizedBox(\r\n               height: 30,\r\n             ).\r\n+\r\n+## make task list\r\n+\r\n+1-make all thing in the same vertical line\r\n+\r\n+2-use either listtil or checkboxList tile to make check box\r\n+\r\n+3-to acheve first one make padding of containe same as the upper one.\r\n"
+                },
+                {
+                    "date": 1634035084583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,4 +36,6 @@\n \r\n 2-use either listtil or checkboxList tile to make check box\r\n \r\n 3-to acheve first one make padding of containe same as the upper one.\r\n+\r\n+4-Use the avaible not to makenew one.\r\n"
                 }
             ],
             "date": 1633889825927,

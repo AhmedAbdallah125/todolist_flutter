@@ -3,11 +3,23 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1633889806005,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1633953122373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:flutter/material.dart';\r\n+import 'package:todolist_flutter/screens/task_screen.dart';\r\n \r\n void main() {\r\n   runApp(MyApp());\r\n }\r\n@@ -7,7 +8,7 @@\n class MyApp extends StatelessWidget {\r\n   // This widget is the root of your application.\r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return MaterialApp();\r\n+    return TaskScreen();\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633953496992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,9 @@\n class MyApp extends StatelessWidget {\r\n   // This widget is the root of your application.\r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return TaskScreen();\r\n+    return MaterialApp(\r\n+      home: TaskScreen(),\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633976929882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n   // This widget is the root of your application.\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return MaterialApp(\r\n+      debugShowCheckedModeBanner: false,\r\n       home: TaskScreen(),\r\n     );\r\n   }\r\n }\r\n"
                 }
             ],
             "date": 1633889806005,

@@ -1,0 +1,598 @@
+{
+    "sourceFile": "lib/screens/task_screen.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 145,
+            "patches": [
+                {
+                    "date": 1633953115408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1633953291287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,12 @@\n \r\n class TaskScreen extends StatelessWidget {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container();\r\n+    return Scaffold(\r\n+      floatingActionButton: FloatingActionButton(\r\n+        onPressed: () {},\r\n+        child: Icon(Icons.add),\r\n+      ),\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633953583718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,8 @@\n       floatingActionButton: FloatingActionButton(\r\n         onPressed: () {},\r\n         child: Icon(Icons.add),\r\n       ),\r\n+      backgroundColor: Colors.blueAccent,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633953659025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n       floatingActionButton: FloatingActionButton(\r\n         onPressed: () {},\r\n         child: Icon(Icons.add),\r\n       ),\r\n-      backgroundColor: Colors.blueAccent,\r\n+      backgroundColor: Colors.lightBlueAccent,\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633953683146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n       floatingActionButton: FloatingActionButton(\r\n         onPressed: () {},\r\n         child: Icon(Icons.add),\r\n       ),\r\n-      backgroundColor: Colors.lightBlueAccent,\r\n+      backgroundColor: Colors.blue[90],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633953692498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n       floatingActionButton: FloatingActionButton(\r\n         onPressed: () {},\r\n         child: Icon(Icons.add),\r\n       ),\r\n-      backgroundColor: Colors.blue[90],\r\n+      backgroundColor: Colors.blue[100],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633953704897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n       floatingActionButton: FloatingActionButton(\r\n         onPressed: () {},\r\n         child: Icon(Icons.add),\r\n       ),\r\n-      backgroundColor: Colors.blue[100],\r\n+      backgroundColor: Colors.blue[200],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633953714275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n       floatingActionButton: FloatingActionButton(\r\n         onPressed: () {},\r\n         child: Icon(Icons.add),\r\n       ),\r\n-      backgroundColor: Colors.blue[200],\r\n+      backgroundColor: Colors.blue[300],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633953741733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       floatingActionButton: FloatingActionButton(\r\n+        backgroundColor: Colors.blue[300],\r\n         onPressed: () {},\r\n         child: Icon(Icons.add),\r\n       ),\r\n       backgroundColor: Colors.blue[300],\r\n"
+                },
+                {
+                    "date": 1633953762992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n         backgroundColor: Colors.blue[300],\r\n         onPressed: () {},\r\n         child: Icon(Icons.add),\r\n       ),\r\n-      backgroundColor: Colors.blue[300],\r\n+      backgroundColor: Colors.blue[200],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633953822759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,10 @@\n         onPressed: () {},\r\n         child: Icon(Icons.add),\r\n       ),\r\n       backgroundColor: Colors.blue[200],\r\n+      body: Container(\r\n+        color: Colors.white,\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633953921638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,10 @@\n         child: Icon(Icons.add),\r\n       ),\r\n       backgroundColor: Colors.blue[200],\r\n       body: Container(\r\n+        decoration: BoxDecoration(\r\n+            borderRadius: BorderRadius.only(topLeft: Radius.circular(30))),\r\n         color: Colors.white,\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1633953937529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n       body: Container(\r\n         decoration: BoxDecoration(\r\n             borderRadius: BorderRadius.only(topLeft: Radius.circular(30))),\r\n         color: Colors.white,\r\n+        child: Text('555'),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633953963206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n       ),\r\n       backgroundColor: Colors.blue[200],\r\n       body: Container(\r\n         decoration: BoxDecoration(\r\n+            color: Colors.white,\r\n             borderRadius: BorderRadius.only(topLeft: Radius.circular(30))),\r\n-        color: Colors.white,\r\n         child: Text('555'),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1633953991207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,12 @@\n       backgroundColor: Colors.blue[200],\r\n       body: Container(\r\n         decoration: BoxDecoration(\r\n             color: Colors.white,\r\n-            borderRadius: BorderRadius.only(topLeft: Radius.circular(30))),\r\n+            borderRadius: BorderRadius.only(\r\n+              topLeft: Radius.circular(30),\r\n+              topRightt: Radius.circular(30),\r\n+            )),\r\n         child: Text('555'),\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1633953997558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         decoration: BoxDecoration(\r\n             color: Colors.white,\r\n             borderRadius: BorderRadius.only(\r\n               topLeft: Radius.circular(30),\r\n-              topRightt: Radius.circular(30),\r\n+              topRight: Radius.circular(30),\r\n             )),\r\n         child: Text('555'),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1633954015218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n         child: Icon(Icons.add),\r\n       ),\r\n       backgroundColor: Colors.blue[200],\r\n       body: Container(\r\n+        padding: EdgeInsets.all(100),\r\n         decoration: BoxDecoration(\r\n             color: Colors.white,\r\n             borderRadius: BorderRadius.only(\r\n               topLeft: Radius.circular(30),\r\n"
+                },
+                {
+                    "date": 1633954044686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         child: Icon(Icons.add),\r\n       ),\r\n       backgroundColor: Colors.blue[200],\r\n       body: Container(\r\n-        padding: EdgeInsets.all(100),\r\n+        padding: EdgeInsets.symmetric(horizontal: 20),\r\n         decoration: BoxDecoration(\r\n             color: Colors.white,\r\n             borderRadius: BorderRadius.only(\r\n               topLeft: Radius.circular(30),\r\n"
+                },
+                {
+                    "date": 1633954051731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         child: Icon(Icons.add),\r\n       ),\r\n       backgroundColor: Colors.blue[200],\r\n       body: Container(\r\n-        padding: EdgeInsets.symmetric(horizontal: 20),\r\n+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 100),\r\n         decoration: BoxDecoration(\r\n             color: Colors.white,\r\n             borderRadius: BorderRadius.only(\r\n               topLeft: Radius.circular(30),\r\n"
+                },
+                {
+                    "date": 1633954060753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         child: Icon(Icons.add),\r\n       ),\r\n       backgroundColor: Colors.blue[200],\r\n       body: Container(\r\n-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 100),\r\n+        padding: EdgeInsets.symmetric(horizontal: 60, vertical: 100),\r\n         decoration: BoxDecoration(\r\n             color: Colors.white,\r\n             borderRadius: BorderRadius.only(\r\n               topLeft: Radius.circular(30),\r\n"
+                },
+                {
+                    "date": 1633954173430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,10 @@\n         child: Icon(Icons.add),\r\n       ),\r\n       backgroundColor: Colors.blue[200],\r\n       body: Container(\r\n-        padding: EdgeInsets.symmetric(horizontal: 60, vertical: 100),\r\n+        padding: EdgeInsets.symmetric(\r\n+            horizontal: MediaQuery.of(context).size.width, vertical: 100),\r\n         decoration: BoxDecoration(\r\n             color: Colors.white,\r\n             borderRadius: BorderRadius.only(\r\n               topLeft: Radius.circular(30),\r\n"
+                },
+                {
+                    "date": 1633954201398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n         child: Icon(Icons.add),\r\n       ),\r\n       backgroundColor: Colors.blue[200],\r\n       body: Container(\r\n+        margin: EdgeInsets.all(30),\r\n         padding: EdgeInsets.symmetric(\r\n             horizontal: MediaQuery.of(context).size.width, vertical: 100),\r\n         decoration: BoxDecoration(\r\n             color: Colors.white,\r\n"
+                },
+                {
+                    "date": 1633954258942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         child: Icon(Icons.add),\r\n       ),\r\n       backgroundColor: Colors.blue[200],\r\n       body: Container(\r\n-        margin: EdgeInsets.all(30),\r\n+        margin: EdgeInsets.only(top: MediaQuery.of(context).size.height / 4),\r\n         padding: EdgeInsets.symmetric(\r\n             horizontal: MediaQuery.of(context).size.width, vertical: 100),\r\n         decoration: BoxDecoration(\r\n             color: Colors.white,\r\n"
+                },
+                {
+                    "date": 1633954288355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,10 @@\n       backgroundColor: Colors.blue[200],\r\n       body: Container(\r\n         margin: EdgeInsets.only(top: MediaQuery.of(context).size.height / 4),\r\n         padding: EdgeInsets.symmetric(\r\n-            horizontal: MediaQuery.of(context).size.width, vertical: 100),\r\n+            horizontal: MediaQuery.of(context).size.width,\r\n+            vertical: MediaQuery.of(context).size.height),\r\n         decoration: BoxDecoration(\r\n             color: Colors.white,\r\n             borderRadius: BorderRadius.only(\r\n               topLeft: Radius.circular(30),\r\n"
+                },
+                {
+                    "date": 1633954314632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n             vertical: MediaQuery.of(context).size.height),\r\n         decoration: BoxDecoration(\r\n             color: Colors.white,\r\n             borderRadius: BorderRadius.only(\r\n-              topLeft: Radius.circular(30),\r\n-              topRight: Radius.circular(30),\r\n+              topLeft: Radius.circular(20),\r\n+              topRight: Radius.circular(20),\r\n             )),\r\n         child: Text('555'),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1633954364629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         decoration: BoxDecoration(\r\n             color: Colors.white,\r\n             borderRadius: BorderRadius.only(\r\n               topLeft: Radius.circular(20),\r\n-              topRight: Radius.circular(20),\r\n+              topRight: Radius.circular(15),\r\n             )),\r\n         child: Text('555'),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1633954371190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             vertical: MediaQuery.of(context).size.height),\r\n         decoration: BoxDecoration(\r\n             color: Colors.white,\r\n             borderRadius: BorderRadius.only(\r\n-              topLeft: Radius.circular(20),\r\n+              topLeft: Radius.circular(15),\r\n               topRight: Radius.circular(15),\r\n             )),\r\n         child: Text('555'),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1633954401617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,12 @@\n     return Scaffold(\r\n       floatingActionButton: FloatingActionButton(\r\n         backgroundColor: Colors.blue[300],\r\n         onPressed: () {},\r\n-        child: Icon(Icons.add),\r\n+        child: Icon(\r\n+          Icons.add,\r\n+          size: 20,\r\n+        ),\r\n       ),\r\n       backgroundColor: Colors.blue[200],\r\n       body: Container(\r\n         margin: EdgeInsets.only(top: MediaQuery.of(context).size.height / 4),\r\n"
+                },
+                {
+                    "date": 1633954469521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,14 +8,14 @@\n         backgroundColor: Colors.blue[300],\r\n         onPressed: () {},\r\n         child: Icon(\r\n           Icons.add,\r\n-          size: 20,\r\n+          size: 40,\r\n         ),\r\n       ),\r\n       backgroundColor: Colors.blue[200],\r\n       body: Container(\r\n-        margin: EdgeInsets.only(top: MediaQuery.of(context).size.height / 4),\r\n+        margin: EdgeInsets.only(top: MediaQuery.of(context).size.height / 5),\r\n         padding: EdgeInsets.symmetric(\r\n             horizontal: MediaQuery.of(context).size.width,\r\n             vertical: MediaQuery.of(context).size.height),\r\n         decoration: BoxDecoration(\r\n"
+                },
+                {
+                    "date": 1633954544285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,11 @@\n           Icons.add,\r\n           size: 40,\r\n         ),\r\n       ),\r\n-      backgroundColor: Colors.blue[200],\r\n+      backgroundColor: Colors.lightBlueAccent\r\n       body: Container(\r\n-        margin: EdgeInsets.only(top: MediaQuery.of(context).size.height / 5),\r\n+        margin: EdgeInsets.only(top: MediaQuery.of(context).size.height / 3),\r\n         padding: EdgeInsets.symmetric(\r\n             horizontal: MediaQuery.of(context).size.width,\r\n             vertical: MediaQuery.of(context).size.height),\r\n         decoration: BoxDecoration(\r\n"
+                },
+                {
+                    "date": 1633954559383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       floatingActionButton: FloatingActionButton(\r\n-        backgroundColor: Colors.blue[300],\r\n+        backgroundColor: Colors.lightBlueAccent,\r\n         onPressed: () {},\r\n         child: Icon(\r\n           Icons.add,\r\n           size: 40,\r\n"
+                },
+                {
+                    "date": 1633954589017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n           Icons.add,\r\n           size: 40,\r\n         ),\r\n       ),\r\n-      backgroundColor: Colors.lightBlueAccent\r\n+      backgroundColor: Colors.lightBlueAccent,\r\n       body: Container(\r\n         margin: EdgeInsets.only(top: MediaQuery.of(context).size.height / 3),\r\n         padding: EdgeInsets.symmetric(\r\n             horizontal: MediaQuery.of(context).size.width,\r\n"
+                },
+                {
+                    "date": 1633954688780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,20 +12,24 @@\n           size: 40,\r\n         ),\r\n       ),\r\n       backgroundColor: Colors.lightBlueAccent,\r\n-      body: Container(\r\n-        margin: EdgeInsets.only(top: MediaQuery.of(context).size.height / 3),\r\n-        padding: EdgeInsets.symmetric(\r\n-            horizontal: MediaQuery.of(context).size.width,\r\n-            vertical: MediaQuery.of(context).size.height),\r\n-        decoration: BoxDecoration(\r\n-            color: Colors.white,\r\n-            borderRadius: BorderRadius.only(\r\n-              topLeft: Radius.circular(15),\r\n-              topRight: Radius.circular(15),\r\n-            )),\r\n-        child: Text('555'),\r\n+      body: Column(\r\n+        children: [\r\n+          Icon(Icons.list),\r\n+          Container(\r\n+            padding: EdgeInsets.symmetric(\r\n+                horizontal: MediaQuery.of(context).size.width,\r\n+                vertical: MediaQuery.of(context).size.height),\r\n+            decoration: BoxDecoration(\r\n+                color: Colors.white,\r\n+                borderRadius: BorderRadius.only(\r\n+                  topLeft: Radius.circular(15),\r\n+                  topRight: Radius.circular(15),\r\n+                )),\r\n+            child: Text('555'),\r\n+          ),\r\n+        ],\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633954716117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n         children: [\r\n           Icon(Icons.list),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n-                horizontal: MediaQuery.of(context).size.width,\r\n-                vertical: MediaQuery.of(context).size.height),\r\n+              horizontal: MediaQuery.of(context).size.width,\r\n+            ),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n                 borderRadius: BorderRadius.only(\r\n                   topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633954725928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,10 @@\n         children: [\r\n           Icon(Icons.list),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n-              horizontal: MediaQuery.of(context).size.width,\r\n-            ),\r\n+                horizontal: MediaQuery.of(context).size.width,\r\n+                vertical: MediaQuery.of(context).size.height / 2),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n                 borderRadius: BorderRadius.only(\r\n                   topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633954735143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n           Icon(Icons.list),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width,\r\n-                vertical: MediaQuery.of(context).size.height / 2),\r\n+                vertical: MediaQuery.of(context).size.height / 4),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n                 borderRadius: BorderRadius.only(\r\n                   topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633954758984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,14 +13,15 @@\n         ),\r\n       ),\r\n       backgroundColor: Colors.lightBlueAccent,\r\n       body: Column(\r\n+        crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Icon(Icons.list),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width,\r\n-                vertical: MediaQuery.of(context).size.height / 4),\r\n+                vertical: MediaQuery.of(context).size.height / 2.5),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n                 borderRadius: BorderRadius.only(\r\n                   topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633954769539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,12 @@\n       backgroundColor: Colors.lightBlueAccent,\r\n       body: Column(\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n-          Icon(Icons.list),\r\n+          Padding(\r\n+            padding: const EdgeInsets.all(8.0),\r\n+            child: Icon(Icons.list),\r\n+          ),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width,\r\n                 vertical: MediaQuery.of(context).size.height / 2.5),\r\n"
+                },
+                {
+                    "date": 1633955026620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n       backgroundColor: Colors.lightBlueAccent,\r\n       body: Column(\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n-          Padding(\r\n+          Container(\r\n             padding: const EdgeInsets.all(8.0),\r\n             child: Icon(Icons.list),\r\n           ),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1633955057909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n       body: Column(\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Container(\r\n+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(75)),\r\n             padding: const EdgeInsets.all(8.0),\r\n             child: Icon(Icons.list),\r\n           ),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1633955073526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,10 @@\n       body: Column(\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Container(\r\n-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(75)),\r\n+            decoration: BoxDecoration(\r\n+                color: Colors.white, borderRadius: BorderRadius.circular(75)),\r\n             padding: const EdgeInsets.all(8.0),\r\n             child: Icon(Icons.list),\r\n           ),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1633955163791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Container(\r\n             decoration: BoxDecoration(\r\n-                color: Colors.white, borderRadius: BorderRadius.circular(75)),\r\n+                color: Colors.white, borderRadius: BorderRadius.circular(90)),\r\n             padding: const EdgeInsets.all(8.0),\r\n             child: Icon(Icons.list),\r\n           ),\r\n           Container(\r\n"
+                },
+                {
+                    "date": 1633955189807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,9 @@\n             child: Icon(Icons.list),\r\n           ),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n-                horizontal: MediaQuery.of(context).size.width,\r\n-                vertical: MediaQuery.of(context).size.height / 2.5),\r\n+                horizontal: MediaQuery.of(context).size.width, vertical: 100),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n                 borderRadius: BorderRadius.only(\r\n                   topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633955206997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,12 @@\n           Container(\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white, borderRadius: BorderRadius.circular(90)),\r\n             padding: const EdgeInsets.all(8.0),\r\n-            child: Icon(Icons.list),\r\n+            child: Icon(\r\n+              Icons.list,\r\n+              color: Colors.lightBlueAccent,\r\n+            ),\r\n           ),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width, vertical: 100),\r\n"
+                },
+                {
+                    "date": 1633955225540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Container(\r\n             decoration: BoxDecoration(\r\n-                color: Colors.white, borderRadius: BorderRadius.circular(90)),\r\n+                color: Colors.white, borderRadius: BorderRadius.circular(100)),\r\n             padding: const EdgeInsets.all(8.0),\r\n             child: Icon(\r\n               Icons.list,\r\n               color: Colors.lightBlueAccent,\r\n"
+                },
+                {
+                    "date": 1633955237550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,9 @@\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Container(\r\n             decoration: BoxDecoration(\r\n-                color: Colors.white, borderRadius: BorderRadius.circular(100)),\r\n-            padding: const EdgeInsets.all(8.0),\r\n+                color: Colors.white, borderRadius: BorderRadius.circular(300)),\r\n             child: Icon(\r\n               Icons.list,\r\n               color: Colors.lightBlueAccent,\r\n             ),\r\n"
+                },
+                {
+                    "date": 1633955247966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,10 @@\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Container(\r\n             decoration: BoxDecoration(\r\n-                color: Colors.white, borderRadius: BorderRadius.circular(300)),\r\n+                color: Colors.white, borderRadius: BorderRadius.circular(30)),\r\n+            padding: const EdgeInsets.all(8.0),\r\n             child: Icon(\r\n               Icons.list,\r\n               color: Colors.lightBlueAccent,\r\n             ),\r\n"
+                },
+                {
+                    "date": 1633955258547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         children: [\r\n           Container(\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white, borderRadius: BorderRadius.circular(30)),\r\n-            padding: const EdgeInsets.all(8.0),\r\n+            padding: const EdgeInsets.all(15.0),\r\n             child: Icon(\r\n               Icons.list,\r\n               color: Colors.lightBlueAccent,\r\n             ),\r\n"
+                },
+                {
+                    "date": 1633955264747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         children: [\r\n           Container(\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white, borderRadius: BorderRadius.circular(30)),\r\n-            padding: const EdgeInsets.all(15.0),\r\n+            padding: const EdgeInsets.all(10.0),\r\n             child: Icon(\r\n               Icons.list,\r\n               color: Colors.lightBlueAccent,\r\n             ),\r\n"
+                },
+                {
+                    "date": 1633955289074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n             padding: const EdgeInsets.all(10.0),\r\n             child: Icon(\r\n               Icons.list,\r\n               color: Colors.lightBlueAccent,\r\n+              size: 20,\r\n             ),\r\n           ),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n"
+                },
+                {
+                    "date": 1633955294501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n             padding: const EdgeInsets.all(10.0),\r\n             child: Icon(\r\n               Icons.list,\r\n               color: Colors.lightBlueAccent,\r\n-              size: 20,\r\n+              size: 12.0,\r\n             ),\r\n           ),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n"
+                },
+                {
+                    "date": 1633955300722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n             padding: const EdgeInsets.all(10.0),\r\n             child: Icon(\r\n               Icons.list,\r\n               color: Colors.lightBlueAccent,\r\n-              size: 12.0,\r\n+              size: 18.0,\r\n             ),\r\n           ),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n"
+                },
+                {
+                    "date": 1633955312133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n             padding: const EdgeInsets.all(10.0),\r\n             child: Icon(\r\n               Icons.list,\r\n               color: Colors.lightBlueAccent,\r\n-              size: 18.0,\r\n+              size: 30.0,\r\n             ),\r\n           ),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n"
+                },
+                {
+                    "date": 1633955348087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,11 @@\n               size: 30.0,\r\n             ),\r\n           ),\r\n           Container(\r\n+            child: Text('To Do'),\r\n+          ),\r\n+          Container(\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width, vertical: 100),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n"
+                },
+                {
+                    "date": 1633955379685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,12 @@\n               size: 30.0,\r\n             ),\r\n           ),\r\n           Container(\r\n-            child: Text('To Do'),\r\n+            child: Text(\r\n+              'To Do',\r\n+              style: TextStyle(color: Colors.white),\r\n+            ),\r\n           ),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width, vertical: 100),\r\n"
+                },
+                {
+                    "date": 1633955397637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n           ),\r\n           Container(\r\n             child: Text(\r\n               'To Do',\r\n-              style: TextStyle(color: Colors.white),\r\n+              style: TextStyle(color: Colors.white, fontSize: 30),\r\n             ),\r\n           ),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n"
+                },
+                {
+                    "date": 1633955427518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n           Container(\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white, borderRadius: BorderRadius.circular(30)),\r\n             padding: const EdgeInsets.all(10.0),\r\n+            margin: EdgeInsets.only(left: 30),\r\n             child: Icon(\r\n               Icons.list,\r\n               color: Colors.lightBlueAccent,\r\n               size: 30.0,\r\n"
+                },
+                {
+                    "date": 1633955434848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n           Container(\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white, borderRadius: BorderRadius.circular(30)),\r\n             padding: const EdgeInsets.all(10.0),\r\n-            margin: EdgeInsets.only(left: 30),\r\n+            margin: EdgeInsets.only(left: 30, top: 30),\r\n             child: Icon(\r\n               Icons.list,\r\n               color: Colors.lightBlueAccent,\r\n               size: 30.0,\r\n"
+                },
+                {
+                    "date": 1633955443727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n               size: 30.0,\r\n             ),\r\n           ),\r\n           Container(\r\n+            margin: EdgeInsets.only(left: 30, top: 30),\r\n             child: Text(\r\n               'To Do',\r\n               style: TextStyle(color: Colors.white, fontSize: 30),\r\n             ),\r\n"
+                },
+                {
+                    "date": 1633955453930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n               size: 30.0,\r\n             ),\r\n           ),\r\n           Container(\r\n-            margin: EdgeInsets.only(left: 30, top: 30),\r\n+            margin: EdgeInsets.only(left: 30, top: 20),\r\n             child: Text(\r\n               'To Do',\r\n               style: TextStyle(color: Colors.white, fontSize: 30),\r\n             ),\r\n"
+                },
+                {
+                    "date": 1633955462347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n               size: 30.0,\r\n             ),\r\n           ),\r\n           Container(\r\n-            margin: EdgeInsets.only(left: 30, top: 20),\r\n+            margin: EdgeInsets.only(left: 30, top: 15),\r\n             child: Text(\r\n               'To Do',\r\n               style: TextStyle(color: Colors.white, fontSize: 30),\r\n             ),\r\n"
+                },
+                {
+                    "date": 1633955493137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,15 @@\n               'To Do',\r\n               style: TextStyle(color: Colors.white, fontSize: 30),\r\n             ),\r\n           ),\r\n+           Container(\r\n+            margin: EdgeInsets.only(left: 30, top: 15),\r\n+            child: Text(\r\n+              '12 Tasks',\r\n+              style: TextStyle(color: Colors.white, fontSize: 20),\r\n+            ),\r\n+          )\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width, vertical: 100),\r\n             decoration: BoxDecoration(\r\n"
+                },
+                {
+                    "date": 1633955498501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,15 +33,15 @@\n               'To Do',\r\n               style: TextStyle(color: Colors.white, fontSize: 30),\r\n             ),\r\n           ),\r\n-           Container(\r\n+          Container(\r\n             margin: EdgeInsets.only(left: 30, top: 15),\r\n             child: Text(\r\n               '12 Tasks',\r\n               style: TextStyle(color: Colors.white, fontSize: 20),\r\n             ),\r\n-          )\r\n+          ),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width, vertical: 100),\r\n             decoration: BoxDecoration(\r\n"
+                },
+                {
+                    "date": 1633955506909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n               style: TextStyle(color: Colors.white, fontSize: 30),\r\n             ),\r\n           ),\r\n           Container(\r\n-            margin: EdgeInsets.only(left: 30, top: 15),\r\n+            margin: EdgeInsets.only(left: 30, top: 6),\r\n             child: Text(\r\n               '12 Tasks',\r\n               style: TextStyle(color: Colors.white, fontSize: 20),\r\n             ),\r\n"
+                },
+                {
+                    "date": 1633955516205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,11 @@\n               style: TextStyle(color: Colors.white, fontSize: 30),\r\n             ),\r\n           ),\r\n           Container(\r\n-            margin: EdgeInsets.only(left: 30, top: 6),\r\n+            margin: EdgeInsets.only(\r\n+              left: 30,\r\n+            ),\r\n             child: Text(\r\n               '12 Tasks',\r\n               style: TextStyle(color: Colors.white, fontSize: 20),\r\n             ),\r\n"
+                },
+                {
+                    "date": 1633955523449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n               left: 30,\r\n             ),\r\n             child: Text(\r\n               '12 Tasks',\r\n-              style: TextStyle(color: Colors.white, fontSize: 20),\r\n+              style: TextStyle(color: Colors.white, fontSize: 18),\r\n             ),\r\n           ),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n"
+                },
+                {
+                    "date": 1633955531934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n               left: 30,\r\n             ),\r\n             child: Text(\r\n               '12 Tasks',\r\n-              style: TextStyle(color: Colors.white, fontSize: 18),\r\n+              style: TextStyle(color: Colors.white, fontSize: 8),\r\n             ),\r\n           ),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n"
+                },
+                {
+                    "date": 1633955539826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n               left: 30,\r\n             ),\r\n             child: Text(\r\n               '12 Tasks',\r\n-              style: TextStyle(color: Colors.white, fontSize: 8),\r\n+              style: TextStyle(color: Colors.white, fontSize: 12),\r\n             ),\r\n           ),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n"
+                },
+                {
+                    "date": 1633955550147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n               left: 30,\r\n             ),\r\n             child: Text(\r\n               '12 Tasks',\r\n-              style: TextStyle(color: Colors.white, fontSize: 12),\r\n+              style: TextStyle(color: Colors.white, fontSize: 15),\r\n             ),\r\n           ),\r\n           Container(\r\n             padding: EdgeInsets.symmetric(\r\n"
+                },
+                {
+                    "date": 1633955578351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,9 @@\n               style: TextStyle(color: Colors.white, fontSize: 15),\r\n             ),\r\n           ),\r\n           Container(\r\n+            margin: EdgeInsets.only(top: 20),\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width, vertical: 100),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n"
+                },
+                {
+                    "date": 1633955606871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,11 +43,12 @@\n               style: TextStyle(color: Colors.white, fontSize: 15),\r\n             ),\r\n           ),\r\n           Container(\r\n-            margin: EdgeInsets.only(top: 20),\r\n+            margin: EdgeInsets.only(top: 30),\r\n             padding: EdgeInsets.symmetric(\r\n-                horizontal: MediaQuery.of(context).size.width, vertical: 100),\r\n+                horizontal: MediaQuery.of(context).size.width,\r\n+                vertical: MediaQuery.of(context).size.height),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n                 borderRadius: BorderRadius.only(\r\n                   topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633955621560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n           Container(\r\n             margin: EdgeInsets.only(top: 30),\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width,\r\n-                vertical: MediaQuery.of(context).size.height),\r\n+                vertical: double.infinity),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n                 borderRadius: BorderRadius.only(\r\n                   topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633955628343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n           Container(\r\n             margin: EdgeInsets.only(top: 30),\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width,\r\n-                vertical: double.infinity),\r\n+                vertical: double.maxFinite),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n                 borderRadius: BorderRadius.only(\r\n                   topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633955649085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n           Container(\r\n             margin: EdgeInsets.only(top: 30),\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width,\r\n-                vertical: double.maxFinite),\r\n+                vertical: MediaQuery.of(context).size.height / 3),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n                 borderRadius: BorderRadius.only(\r\n                   topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633955692380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n           Container(\r\n             margin: EdgeInsets.only(top: 30),\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width,\r\n-                vertical: MediaQuery.of(context).size.height / 3),\r\n+                vertical: MediaQuery.of(context).size.height / 5),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n                 borderRadius: BorderRadius.only(\r\n                   topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633955700568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n           Container(\r\n             margin: EdgeInsets.only(top: 30),\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width,\r\n-                vertical: MediaQuery.of(context).size.height / 5),\r\n+                vertical: MediaQuery.of(context).size.height / 5 + 80),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n                 borderRadius: BorderRadius.only(\r\n                   topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633955708251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n           Container(\r\n             margin: EdgeInsets.only(top: 30),\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width,\r\n-                vertical: MediaQuery.of(context).size.height / 5 + 80),\r\n+                vertical: MediaQuery.of(context).size.height / 5 + 85),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n                 borderRadius: BorderRadius.only(\r\n                   topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633955744215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n           Container(\r\n             margin: EdgeInsets.only(top: 30),\r\n             padding: EdgeInsets.symmetric(\r\n                 horizontal: MediaQuery.of(context).size.width,\r\n-                vertical: MediaQuery.of(context).size.height / 5 + 85),\r\n+                vertical: MediaQuery.of(context).size.height / 5),\r\n             decoration: BoxDecoration(\r\n                 color: Colors.white,\r\n                 borderRadius: BorderRadius.only(\r\n                   topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633956390638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,52 +12,55 @@\n           size: 40,\r\n         ),\r\n       ),\r\n       backgroundColor: Colors.lightBlueAccent,\r\n-      body: Column(\r\n-        crossAxisAlignment: CrossAxisAlignment.start,\r\n-        children: [\r\n-          Container(\r\n-            decoration: BoxDecoration(\r\n-                color: Colors.white, borderRadius: BorderRadius.circular(30)),\r\n-            padding: const EdgeInsets.all(10.0),\r\n-            margin: EdgeInsets.only(left: 30, top: 30),\r\n-            child: Icon(\r\n-              Icons.list,\r\n-              color: Colors.lightBlueAccent,\r\n-              size: 30.0,\r\n+      body: Container(\r\n+        padding: EdgeInsets.only(left: 30),\r\n+        child: Column(\r\n+          crossAxisAlignment: CrossAxisAlignment.start,\r\n+          children: [\r\n+            Container(\r\n+              decoration: BoxDecoration(\r\n+                  color: Colors.white, borderRadius: BorderRadius.circular(30)),\r\n+              padding: const EdgeInsets.all(10.0),\r\n+              margin: EdgeInsets.only(left: 30, top: 30),\r\n+              child: Icon(\r\n+                Icons.list,\r\n+                color: Colors.lightBlueAccent,\r\n+                size: 30.0,\r\n+              ),\r\n             ),\r\n-          ),\r\n-          Container(\r\n-            margin: EdgeInsets.only(left: 30, top: 15),\r\n-            child: Text(\r\n-              'To Do',\r\n-              style: TextStyle(color: Colors.white, fontSize: 30),\r\n+            Container(\r\n+              margin: EdgeInsets.only(left: 30, top: 15),\r\n+              child: Text(\r\n+                'To Do',\r\n+                style: TextStyle(color: Colors.white, fontSize: 30),\r\n+              ),\r\n             ),\r\n-          ),\r\n-          Container(\r\n-            margin: EdgeInsets.only(\r\n-              left: 30,\r\n+            Container(\r\n+              margin: EdgeInsets.only(\r\n+                left: 30,\r\n+              ),\r\n+              child: Text(\r\n+                '12 Tasks',\r\n+                style: TextStyle(color: Colors.white, fontSize: 15),\r\n+              ),\r\n             ),\r\n-            child: Text(\r\n-              '12 Tasks',\r\n-              style: TextStyle(color: Colors.white, fontSize: 15),\r\n+            Container(\r\n+              margin: EdgeInsets.only(top: 30),\r\n+              padding: EdgeInsets.symmetric(\r\n+                  horizontal: MediaQuery.of(context).size.width,\r\n+                  vertical: MediaQuery.of(context).size.height / 5),\r\n+              decoration: BoxDecoration(\r\n+                  color: Colors.white,\r\n+                  borderRadius: BorderRadius.only(\r\n+                    topLeft: Radius.circular(15),\r\n+                    topRight: Radius.circular(15),\r\n+                  )),\r\n+              child: Text('555'),\r\n             ),\r\n-          ),\r\n-          Container(\r\n-            margin: EdgeInsets.only(top: 30),\r\n-            padding: EdgeInsets.symmetric(\r\n-                horizontal: MediaQuery.of(context).size.width,\r\n-                vertical: MediaQuery.of(context).size.height / 5),\r\n-            decoration: BoxDecoration(\r\n-                color: Colors.white,\r\n-                borderRadius: BorderRadius.only(\r\n-                  topLeft: Radius.circular(15),\r\n-                  topRight: Radius.circular(15),\r\n-                )),\r\n-            child: Text('555'),\r\n-          ),\r\n-        ],\r\n+          ],\r\n+        ),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633956408834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         ),\r\n       ),\r\n       backgroundColor: Colors.lightBlueAccent,\r\n       body: Container(\r\n-        padding: EdgeInsets.only(left: 30),\r\n+        padding: EdgeInsets.only(left: 30, top: 20),\r\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n             Container(\r\n"
+                },
+                {
+                    "date": 1633956421444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,8 @@\n           children: [\r\n             Container(\r\n               decoration: BoxDecoration(\r\n                   color: Colors.white, borderRadius: BorderRadius.circular(30)),\r\n-              padding: const EdgeInsets.all(10.0),\r\n-              margin: EdgeInsets.only(left: 30, top: 30),\r\n               child: Icon(\r\n                 Icons.list,\r\n                 color: Colors.lightBlueAccent,\r\n                 size: 30.0,\r\n"
+                },
+                {
+                    "date": 1633956472730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,9 @@\n         padding: EdgeInsets.only(left: 30, top: 20),\r\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n-            Container(\r\n-              decoration: BoxDecoration(\r\n-                  color: Colors.white, borderRadius: BorderRadius.circular(30)),\r\n+            CircleAvatar(\r\n               child: Icon(\r\n                 Icons.list,\r\n                 color: Colors.lightBlueAccent,\r\n                 size: 30.0,\r\n"
+                },
+                {
+                    "date": 1633956490370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n             CircleAvatar(\r\n+              backgroundColor: Colors.white,\r\n               child: Icon(\r\n                 Icons.list,\r\n                 color: Colors.lightBlueAccent,\r\n                 size: 30.0,\r\n"
+                },
+                {
+                    "date": 1633956546980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         ),\r\n       ),\r\n       backgroundColor: Colors.lightBlueAccent,\r\n       body: Container(\r\n-        padding: EdgeInsets.only(left: 30, top: 20),\r\n+        padding: EdgeInsets.only(left: 30, top: 30),\r\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n             CircleAvatar(\r\n"
+                },
+                {
+                    "date": 1633956559743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         ),\r\n       ),\r\n       backgroundColor: Colors.lightBlueAccent,\r\n       body: Container(\r\n-        padding: EdgeInsets.only(left: 30, top: 30),\r\n+        padding: EdgeInsets.only(left: 30, top: 30, right: 30, bottom: 30),\r\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n             CircleAvatar(\r\n"
+                },
+                {
+                    "date": 1633956571940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         ),\r\n       ),\r\n       backgroundColor: Colors.lightBlueAccent,\r\n       body: Container(\r\n-        padding: EdgeInsets.only(left: 30, top: 30, right: 30, bottom: 30),\r\n+        padding: EdgeInsets.only(left: 60, top: 30, right: 30, bottom: 30),\r\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n             CircleAvatar(\r\n"
+                },
+                {
+                    "date": 1633956577943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n         ),\r\n       ),\r\n       backgroundColor: Colors.lightBlueAccent,\r\n       body: Container(\r\n-        padding: EdgeInsets.only(left: 60, top: 30, right: 30, bottom: 30),\r\n+        padding: EdgeInsets.only(left: 30, top: 60, right: 30, bottom: 30),\r\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n             CircleAvatar(\r\n"
+                },
+                {
+                    "date": 1633956588796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,8 @@\n                 size: 30.0,\r\n               ),\r\n             ),\r\n             Container(\r\n-              margin: EdgeInsets.only(left: 30, top: 15),\r\n               child: Text(\r\n                 'To Do',\r\n                 style: TextStyle(color: Colors.white, fontSize: 30),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1633956605747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,11 +32,8 @@\n                 style: TextStyle(color: Colors.white, fontSize: 30),\r\n               ),\r\n             ),\r\n             Container(\r\n-              margin: EdgeInsets.only(\r\n-                left: 30,\r\n-              ),\r\n               child: Text(\r\n                 '12 Tasks',\r\n                 style: TextStyle(color: Colors.white, fontSize: 15),\r\n               ),\r\n"
+                },
+                {
+                    "date": 1633956638209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,12 @@\n             ),\r\n             Container(\r\n               child: Text(\r\n                 'To Do',\r\n-                style: TextStyle(color: Colors.white, fontSize: 30),\r\n+                style: TextStyle(\r\n+                    color: Colors.white,\r\n+                    fontSize: 30,\r\n+                    fontWeight: FontWeight.w700),\r\n               ),\r\n             ),\r\n             Container(\r\n               child: Text(\r\n"
+                },
+                {
+                    "date": 1633956660691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n         child: Column(\r\n           crossAxisAlignment: CrossAxisAlignment.start,\r\n           children: [\r\n             CircleAvatar(\r\n+              radius: 30,\r\n               backgroundColor: Colors.white,\r\n               child: Icon(\r\n                 Icons.list,\r\n                 color: Colors.lightBlueAccent,\r\n"
+                },
+                {
+                    "date": 1633956676476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n               child: Text(\r\n                 'To Do',\r\n                 style: TextStyle(\r\n                     color: Colors.white,\r\n-                    fontSize: 30,\r\n+                    fontSize: 40,\r\n                     fontWeight: FontWeight.w700),\r\n               ),\r\n             ),\r\n             Container(\r\n"
+                },
+                {
+                    "date": 1633956688503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n               child: Text(\r\n                 'To Do',\r\n                 style: TextStyle(\r\n                     color: Colors.white,\r\n-                    fontSize: 40,\r\n+                    fontSize: 50,\r\n                     fontWeight: FontWeight.w700),\r\n               ),\r\n             ),\r\n             Container(\r\n"
+                },
+                {
+                    "date": 1633960012707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,11 +43,8 @@\n               ),\r\n             ),\r\n             Container(\r\n               margin: EdgeInsets.only(top: 30),\r\n-              padding: EdgeInsets.symmetric(\r\n-                  horizontal: MediaQuery.of(context).size.width,\r\n-                  vertical: MediaQuery.of(context).size.height / 5),\r\n               decoration: BoxDecoration(\r\n                   color: Colors.white,\r\n                   borderRadius: BorderRadius.only(\r\n                     topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633960041871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,17 +41,19 @@\n                 '12 Tasks',\r\n                 style: TextStyle(color: Colors.white, fontSize: 15),\r\n               ),\r\n             ),\r\n-            Container(\r\n-              margin: EdgeInsets.only(top: 30),\r\n-              decoration: BoxDecoration(\r\n-                  color: Colors.white,\r\n-                  borderRadius: BorderRadius.only(\r\n-                    topLeft: Radius.circular(15),\r\n-                    topRight: Radius.circular(15),\r\n-                  )),\r\n-              child: Text('555'),\r\n+            Expanded(\r\n+              child: Container(\r\n+                margin: EdgeInsets.only(top: 30),\r\n+                decoration: BoxDecoration(\r\n+                    color: Colors.white,\r\n+                    borderRadius: BorderRadius.only(\r\n+                      topLeft: Radius.circular(15),\r\n+                      topRight: Radius.circular(15),\r\n+                    )),\r\n+                child: Text('555'),\r\n+              ),\r\n             ),\r\n           ],\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1633960053203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,8 @@\n               ),\r\n             ),\r\n             Expanded(\r\n               child: Container(\r\n-                margin: EdgeInsets.only(top: 30),\r\n                 decoration: BoxDecoration(\r\n                     color: Colors.white,\r\n                     borderRadius: BorderRadius.only(\r\n                       topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633960067640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,15 +43,15 @@\n               ),\r\n             ),\r\n             Expanded(\r\n               child: Container(\r\n+                margin: EdgeInsets.only(top: 30),\r\n                 decoration: BoxDecoration(\r\n                     color: Colors.white,\r\n                     borderRadius: BorderRadius.only(\r\n                       topLeft: Radius.circular(15),\r\n                       topRight: Radius.circular(15),\r\n                     )),\r\n-                child: Text('555'),\r\n               ),\r\n             ),\r\n           ],\r\n         ),\r\n"
+                },
+                {
+                    "date": 1633976774275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,11 +41,13 @@\n                 '12 Tasks',\r\n                 style: TextStyle(color: Colors.white, fontSize: 15),\r\n               ),\r\n             ),\r\n+            SizedBox(\r\n+              height: 30,\r\n+            ),\r\n             Expanded(\r\n               child: Container(\r\n-                margin: EdgeInsets.only(top: 30),\r\n                 decoration: BoxDecoration(\r\n                     color: Colors.white,\r\n                     borderRadius: BorderRadius.only(\r\n                       topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1633976869850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,52 +12,55 @@\n           size: 40,\r\n         ),\r\n       ),\r\n       backgroundColor: Colors.lightBlueAccent,\r\n-      body: Container(\r\n-        padding: EdgeInsets.only(left: 30, top: 60, right: 30, bottom: 30),\r\n-        child: Column(\r\n-          crossAxisAlignment: CrossAxisAlignment.start,\r\n-          children: [\r\n-            CircleAvatar(\r\n-              radius: 30,\r\n-              backgroundColor: Colors.white,\r\n-              child: Icon(\r\n-                Icons.list,\r\n-                color: Colors.lightBlueAccent,\r\n-                size: 30.0,\r\n-              ),\r\n+      body: Column(\r\n+        children: [\r\n+          Container(\r\n+            padding: EdgeInsets.only(left: 30, top: 60, right: 30, bottom: 30),\r\n+            child: Column(\r\n+              crossAxisAlignment: CrossAxisAlignment.start,\r\n+              children: [\r\n+                CircleAvatar(\r\n+                  radius: 30,\r\n+                  backgroundColor: Colors.white,\r\n+                  child: Icon(\r\n+                    Icons.list,\r\n+                    color: Colors.lightBlueAccent,\r\n+                    size: 30.0,\r\n+                  ),\r\n+                ),\r\n+                Container(\r\n+                  child: Text(\r\n+                    'To Do',\r\n+                    style: TextStyle(\r\n+                        color: Colors.white,\r\n+                        fontSize: 50,\r\n+                        fontWeight: FontWeight.w700),\r\n+                  ),\r\n+                ),\r\n+                Container(\r\n+                  child: Text(\r\n+                    '12 Tasks',\r\n+                    style: TextStyle(color: Colors.white, fontSize: 15),\r\n+                  ),\r\n+                ),\r\n+                SizedBox(\r\n+                  height: 30,\r\n+                ),\r\n+                  child: Container(\r\n+                    decoration: BoxDecoration(\r\n+                        color: Colors.white,\r\n+                        borderRadius: BorderRadius.only(\r\n+                          topLeft: Radius.circular(15),\r\n+                          topRight: Radius.circular(15),\r\n+                        )),\r\n+                  ),\r\n+                ),\r\n+              ],\r\n             ),\r\n-            Container(\r\n-              child: Text(\r\n-                'To Do',\r\n-                style: TextStyle(\r\n-                    color: Colors.white,\r\n-                    fontSize: 50,\r\n-                    fontWeight: FontWeight.w700),\r\n-              ),\r\n-            ),\r\n-            Container(\r\n-              child: Text(\r\n-                '12 Tasks',\r\n-                style: TextStyle(color: Colors.white, fontSize: 15),\r\n-              ),\r\n-            ),\r\n-            SizedBox(\r\n-              height: 30,\r\n-            ),\r\n-            Expanded(\r\n-              child: Container(\r\n-                decoration: BoxDecoration(\r\n-                    color: Colors.white,\r\n-                    borderRadius: BorderRadius.only(\r\n-                      topLeft: Radius.circular(15),\r\n-                      topRight: Radius.circular(15),\r\n-                    )),\r\n-              ),\r\n-            ),\r\n-          ],\r\n-        ),\r\n+          ),\r\n+        ],\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1633976879169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,17 +46,8 @@\n                 ),\r\n                 SizedBox(\r\n                   height: 30,\r\n                 ),\r\n-                  child: Container(\r\n-                    decoration: BoxDecoration(\r\n-                        color: Colors.white,\r\n-                        borderRadius: BorderRadius.only(\r\n-                          topLeft: Radius.circular(15),\r\n-                          topRight: Radius.circular(15),\r\n-                        )),\r\n-                  ),\r\n-                ),\r\n               ],\r\n             ),\r\n           ),\r\n         ],\r\n"
+                },
+                {
+                    "date": 1633976890029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,18 @@\n                 ),\r\n               ],\r\n             ),\r\n           ),\r\n+          Expanded(\r\n+            child: Container(\r\n+              decoration: BoxDecoration(\r\n+                  color: Colors.white,\r\n+                  borderRadius: BorderRadius.only(\r\n+                    topLeft: Radius.circular(15),\r\n+                    topRight: Radius.circular(15),\r\n+                  )),\r\n+            ),\r\n+          ),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1633976907080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n         ),\r\n       ),\r\n       backgroundColor: Colors.lightBlueAccent,\r\n       body: Column(\r\n+        crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Container(\r\n             padding: EdgeInsets.only(left: 30, top: 60, right: 30, bottom: 30),\r\n             child: Column(\r\n"
+                },
+                {
+                    "date": 1633977045455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                     style: TextStyle(color: Colors.white, fontSize: 15),\r\n                   ),\r\n                 ),\r\n                 SizedBox(\r\n-                  height: 30,\r\n+                  height: 20,\r\n                 ),\r\n               ],\r\n             ),\r\n           ),\r\n"
+                },
+                {
+                    "date": 1633977055255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       body: Column(\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Container(\r\n-            padding: EdgeInsets.only(left: 30, top: 60, right: 30, bottom: 30),\r\n+            padding: EdgeInsets.only(left: 30, top: 50, right: 30, bottom: 30),\r\n             child: Column(\r\n               crossAxisAlignment: CrossAxisAlignment.start,\r\n               children: [\r\n                 CircleAvatar(\r\n"
+                },
+                {
+                    "date": 1634030780065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,15 @@\n             ),\r\n           ),\r\n           Expanded(\r\n             child: Container(\r\n+              child: Row(\r\n+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n+                children: [\r\n+                  Text('Buy milk'),\r\n+                  Checkbox(value: value, onChanged: onChanged)\r\n+                ],\r\n+              ),\r\n               decoration: BoxDecoration(\r\n                   color: Colors.white,\r\n                   borderRadius: BorderRadius.only(\r\n                     topLeft: Radius.circular(15),\r\n@@ -65,4 +72,13 @@\n       ),\r\n     );\r\n   }\r\n }\r\n+\r\n+class CheckRow extends StatelessWidget {\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return Row(\r\n+      children: [],\r\n+    );\r\n+  }\r\n+}\r\n"
+                },
+                {
+                    "date": 1634030810834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n               child: Row(\r\n                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n                 children: [\r\n                   Text('Buy milk'),\r\n-                  Checkbox(value: value, onChanged: onChanged)\r\n+                  Checkbox(value: null, onChanged: null),\r\n                 ],\r\n               ),\r\n               decoration: BoxDecoration(\r\n                   color: Colors.white,\r\n"
+                },
+                {
+                    "date": 1634030998195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,12 @@\n class CheckRow extends StatelessWidget {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Row(\r\n-      children: [],\r\n+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n+      children: [\r\n+        Text('Buy milk'),\r\n+        Checkbox(value: null, onChanged: null),\r\n+      ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1634031027793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,14 +74,15 @@\n   }\r\n }\r\n \r\n class CheckRow extends StatelessWidget {\r\n+  final String text;\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n       children: [\r\n-        Text('Buy milk'),\r\n+        Text(text),\r\n         Checkbox(value: null, onChanged: null),\r\n       ],\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1634031099414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,8 +75,10 @@\n }\r\n \r\n class CheckRow extends StatelessWidget {\r\n   final String text;\r\n+  CheckRow({required this.text});\r\n+\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n"
+                },
+                {
+                    "date": 1634031265103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n               child: Row(\r\n                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n                 children: [\r\n                   Text('Buy milk'),\r\n-                  Checkbox(value: null, onChanged: null),\r\n+                  Checkbox(value: true, onChanged: null),\r\n                 ],\r\n               ),\r\n               decoration: BoxDecoration(\r\n                   color: Colors.white,\r\n"
+                },
+                {
+                    "date": 1634031291003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,9 @@\n           Expanded(\r\n             child: Container(\r\n               child: Row(\r\n                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n+                crossAxisAlignment: CrossAxisAlignment.start,\r\n                 children: [\r\n                   Text('Buy milk'),\r\n                   Checkbox(value: true, onChanged: null),\r\n                 ],\r\n"
+                },
+                {
+                    "date": 1634031343877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,15 +52,18 @@\n             ),\r\n           ),\r\n           Expanded(\r\n             child: Container(\r\n-              child: Row(\r\n-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n-                crossAxisAlignment: CrossAxisAlignment.start,\r\n-                children: [\r\n-                  Text('Buy milk'),\r\n-                  Checkbox(value: true, onChanged: null),\r\n-                ],\r\n+              child: Padding(\r\n+                padding: const EdgeInsets.symmetric(horizontal: 8.0),\r\n+                child: Row(\r\n+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n+                  crossAxisAlignment: CrossAxisAlignment.start,\r\n+                  children: [\r\n+                    Text('Buy milk'),\r\n+                    Checkbox(value: true, onChanged: null),\r\n+                  ],\r\n+                ),\r\n               ),\r\n               decoration: BoxDecoration(\r\n                   color: Colors.white,\r\n                   borderRadius: BorderRadius.only(\r\n"
+                },
+                {
+                    "date": 1634031351561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,10 @@\n           ),\r\n           Expanded(\r\n             child: Container(\r\n               child: Padding(\r\n-                padding: const EdgeInsets.symmetric(horizontal: 8.0),\r\n+                padding:\r\n+                    const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),\r\n                 child: Row(\r\n                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n                   crossAxisAlignment: CrossAxisAlignment.start,\r\n                   children: [\r\n"
+                },
+                {
+                    "date": 1634031460122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n           Expanded(\r\n             child: Container(\r\n               child: Padding(\r\n                 padding:\r\n-                    const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),\r\n+                    const EdgeInsets.symmetric(horizontal: 8.0, vertical: 20),\r\n                 child: Row(\r\n                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n                   crossAxisAlignment: CrossAxisAlignment.start,\r\n                   children: [\r\n@@ -86,8 +86,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Row(\r\n       mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n+      crossAxisAlignment: CrossAxisAlignment.start,\r\n       children: [\r\n         Text(text),\r\n         Checkbox(value: null, onChanged: null),\r\n       ],\r\n"
+                },
+                {
+                    "date": 1634031502189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,14 +84,17 @@\n   CheckRow({required this.text});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Row(\r\n-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n-      crossAxisAlignment: CrossAxisAlignment.start,\r\n-      children: [\r\n-        Text(text),\r\n-        Checkbox(value: null, onChanged: null),\r\n-      ],\r\n+    return Padding(\r\n+      padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 20),\r\n+      child: Row(\r\n+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n+        crossAxisAlignment: CrossAxisAlignment.start,\r\n+        children: [\r\n+          Text(text),\r\n+          Checkbox(value: true, onChanged: null),\r\n+        ],\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1634031581209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,19 +52,13 @@\n             ),\r\n           ),\r\n           Expanded(\r\n             child: Container(\r\n-              child: Padding(\r\n-                padding:\r\n-                    const EdgeInsets.symmetric(horizontal: 8.0, vertical: 20),\r\n-                child: Row(\r\n-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n-                  crossAxisAlignment: CrossAxisAlignment.start,\r\n-                  children: [\r\n-                    Text('Buy milk'),\r\n-                    Checkbox(value: true, onChanged: null),\r\n-                  ],\r\n-                ),\r\n+              child: ListView(\r\n+                children: [\r\n+                  CheckRow(text: 'BuyMilk'),\r\n+                  CheckRow(text: 'Do hom Work'),\r\n+                ],\r\n               ),\r\n               decoration: BoxDecoration(\r\n                   color: Colors.white,\r\n                   borderRadius: BorderRadius.only(\r\n"
+                },
+                {
+                    "date": 1634031600808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,9 @@\n   Widget build(BuildContext context) {\r\n     return Padding(\r\n       padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 20),\r\n       child: Row(\r\n-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n+        mainAxisAlignment: MainAxisAlignment.spaceAround,\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Text(text),\r\n           Checkbox(value: true, onChanged: null),\r\n"
+                },
+                {
+                    "date": 1634031612745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,9 @@\n   Widget build(BuildContext context) {\r\n     return Padding(\r\n       padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 20),\r\n       child: Row(\r\n-        mainAxisAlignment: MainAxisAlignment.spaceAround,\r\n+        mainAxisAlignment: MainAxisAlignment.center,\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Text(text),\r\n           Checkbox(value: true, onChanged: null),\r\n"
+                },
+                {
+                    "date": 1634031638331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,10 +54,10 @@\n           Expanded(\r\n             child: Container(\r\n               child: ListView(\r\n                 children: [\r\n-                  CheckRow(text: 'BuyMilk'),\r\n-                  CheckRow(text: 'Do hom Work'),\r\n+                  CheckRow(text: 'Buy Milk'),\r\n+                  CheckRow(text: 'Buy eggs'),\r\n                 ],\r\n               ),\r\n               decoration: BoxDecoration(\r\n                   color: Colors.white,\r\n@@ -81,9 +81,9 @@\n   Widget build(BuildContext context) {\r\n     return Padding(\r\n       padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 20),\r\n       child: Row(\r\n-        mainAxisAlignment: MainAxisAlignment.center,\r\n+        mainAxisAlignment: MainAxisAlignment.spaceAround,\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Text(text),\r\n           Checkbox(value: true, onChanged: null),\r\n"
+                },
+                {
+                    "date": 1634031657146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n             ),\r\n           ),\r\n           Expanded(\r\n             child: Container(\r\n+              padding: EdgeInsets.all(8.0),\r\n               child: ListView(\r\n                 children: [\r\n                   CheckRow(text: 'Buy Milk'),\r\n                   CheckRow(text: 'Buy eggs'),\r\n"
+                },
+                {
+                    "date": 1634031673792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n             ),\r\n           ),\r\n           Expanded(\r\n             child: Container(\r\n-              padding: EdgeInsets.all(8.0),\r\n+              padding: EdgeInsets.symmetric(horizontal: 8.0),\r\n               child: ListView(\r\n                 children: [\r\n                   CheckRow(text: 'Buy Milk'),\r\n                   CheckRow(text: 'Buy eggs'),\r\n"
+                },
+                {
+                    "date": 1634031680316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n             ),\r\n           ),\r\n           Expanded(\r\n             child: Container(\r\n-              padding: EdgeInsets.symmetric(horizontal: 8.0),\r\n+              padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 15),\r\n               child: ListView(\r\n                 children: [\r\n                   CheckRow(text: 'Buy Milk'),\r\n                   CheckRow(text: 'Buy eggs'),\r\n"
+                },
+                {
+                    "date": 1634031693421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,17 +79,14 @@\n   CheckRow({required this.text});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Padding(\r\n-      padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 20),\r\n-      child: Row(\r\n-        mainAxisAlignment: MainAxisAlignment.spaceAround,\r\n-        crossAxisAlignment: CrossAxisAlignment.start,\r\n-        children: [\r\n-          Text(text),\r\n-          Checkbox(value: true, onChanged: null),\r\n-        ],\r\n-      ),\r\n+    return Row(\r\n+      mainAxisAlignment: MainAxisAlignment.spaceAround,\r\n+      crossAxisAlignment: CrossAxisAlignment.start,\r\n+      children: [\r\n+        Text(text),\r\n+        Checkbox(value: true, onChanged: null),\r\n+      ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1634031723939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,14 +79,17 @@\n   CheckRow({required this.text});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Row(\r\n-      mainAxisAlignment: MainAxisAlignment.spaceAround,\r\n-      crossAxisAlignment: CrossAxisAlignment.start,\r\n-      children: [\r\n-        Text(text),\r\n-        Checkbox(value: true, onChanged: null),\r\n-      ],\r\n+    return Padding(\r\n+      padding: const EdgeInsets.symmetric(vertical: 10),\r\n+      child: Row(\r\n+        mainAxisAlignment: MainAxisAlignment.spaceAround,\r\n+        crossAxisAlignment: CrossAxisAlignment.start,\r\n+        children: [\r\n+          Text(text),\r\n+          Checkbox(value: true, onChanged: null),\r\n+        ],\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1634031729131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Padding(\r\n-      padding: const EdgeInsets.symmetric(vertical: 10),\r\n+      padding: const EdgeInsets.symmetric(vertical: 8),\r\n       child: Row(\r\n         mainAxisAlignment: MainAxisAlignment.spaceAround,\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n"
+                },
+                {
+                    "date": 1634031749722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n   Widget build(BuildContext context) {\r\n     return Padding(\r\n       padding: const EdgeInsets.symmetric(vertical: 8),\r\n       child: Row(\r\n-        mainAxisAlignment: MainAxisAlignment.spaceAround,\r\n+        mainAxisAlignment: MainAxisAlignment.start,\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Text(text),\r\n           Checkbox(value: true, onChanged: null),\r\n"
+                },
+                {
+                    "date": 1634031769638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n   Widget build(BuildContext context) {\r\n     return Padding(\r\n       padding: const EdgeInsets.symmetric(vertical: 8),\r\n       child: Row(\r\n-        mainAxisAlignment: MainAxisAlignment.start,\r\n+        mainAxisAlignment: MainAxisAlignment.spaceBetween,\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Text(text),\r\n           Checkbox(value: true, onChanged: null),\r\n"
+                },
+                {
+                    "date": 1634031780018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n   Widget build(BuildContext context) {\r\n     return Padding(\r\n       padding: const EdgeInsets.symmetric(vertical: 8),\r\n       child: Row(\r\n-        mainAxisAlignment: MainAxisAlignment.spaceBetween,\r\n+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n           Text(text),\r\n           Checkbox(value: true, onChanged: null),\r\n"
+                },
+                {
+                    "date": 1634031814228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,12 +82,12 @@\n   Widget build(BuildContext context) {\r\n     return Padding(\r\n       padding: const EdgeInsets.symmetric(vertical: 8),\r\n       child: Row(\r\n-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,\r\n+        mainAxisAlignment: MainAxisAlignment.start,\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n-          Text(text),\r\n+          Expanded(child: Text(text)),\r\n           Checkbox(value: true, onChanged: null),\r\n         ],\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1634031829745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n       child: Row(\r\n         mainAxisAlignment: MainAxisAlignment.start,\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n-          Expanded(child: Text(text)),\r\n+          Flexible(child: Text(text)),\r\n           Checkbox(value: true, onChanged: null),\r\n         ],\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1634031855111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,10 +85,10 @@\n       child: Row(\r\n         mainAxisAlignment: MainAxisAlignment.start,\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n-          Flexible(child: Text(text)),\r\n-          Checkbox(value: true, onChanged: null),\r\n+          Flexible(flex: 3, child: Text(text)),\r\n+          Flexible(flex: 1, child: Checkbox(value: true, onChanged: null)),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1634031869407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,10 +85,10 @@\n       child: Row(\r\n         mainAxisAlignment: MainAxisAlignment.start,\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n-          Flexible(flex: 3, child: Text(text)),\r\n-          Flexible(flex: 1, child: Checkbox(value: true, onChanged: null)),\r\n+          Flexible(flex: 1, child: Text(text)),\r\n+          Flexible(flex: 0.2, child: Checkbox(value: true, onChanged: null)),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1634031897160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,10 +85,10 @@\n       child: Row(\r\n         mainAxisAlignment: MainAxisAlignment.start,\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n-          Flexible(flex: 1, child: Text(text)),\r\n-          Flexible(flex: 0.2, child: Checkbox(value: true, onChanged: null)),\r\n+          Flexible(flex: 3, fit: FlexFit.loose, child: Text(text)),\r\n+          Flexible(flex: 1, child: Checkbox(value: true, onChanged: null)),\r\n         ],\r\n       ),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1634031903502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n       child: Row(\r\n         mainAxisAlignment: MainAxisAlignment.start,\r\n         crossAxisAlignment: CrossAxisAlignment.start,\r\n         children: [\r\n-          Flexible(flex: 3, fit: FlexFit.loose, child: Text(text)),\r\n+          Flexible(flex: 3, fit: FlexFit.tight, child: Text(text)),\r\n           Flexible(flex: 1, child: Checkbox(value: true, onChanged: null)),\r\n         ],\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1634034602474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n             ),\r\n           ),\r\n           Expanded(\r\n             child: Container(\r\n-              padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 15),\r\n+              padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 15),\r\n               child: ListView(\r\n                 children: [\r\n                   CheckRow(text: 'Buy Milk'),\r\n                   CheckRow(text: 'Buy eggs'),\r\n"
+                },
+                {
+                    "date": 1634034645728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,13 @@\n               child: ListView(\r\n                 children: [\r\n                   CheckRow(text: 'Buy Milk'),\r\n                   CheckRow(text: 'Buy eggs'),\r\n+                  CheckboxListTile(\r\n+                    value: true,\r\n+                    onChanged: null,\r\n+                    title: Text('Buy Tea'),\r\n+                  )\r\n                 ],\r\n               ),\r\n               decoration: BoxDecoration(\r\n                   color: Colors.white,\r\n"
+                },
+                {
+                    "date": 1634034677483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,10 +55,8 @@\n             child: Container(\r\n               padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 15),\r\n               child: ListView(\r\n                 children: [\r\n-                  CheckRow(text: 'Buy Milk'),\r\n-                  CheckRow(text: 'Buy eggs'),\r\n                   CheckboxListTile(\r\n                     value: true,\r\n                     onChanged: null,\r\n                     title: Text('Buy Tea'),\r\n"
+                },
+                {
+                    "date": 1634034818196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n                 children: [\r\n                   CheckboxListTile(\r\n                     value: true,\r\n                     onChanged: null,\r\n-                    title: Text('Buy Tea'),\r\n+                    title: Text('data'),\r\n                   )\r\n                 ],\r\n               ),\r\n               decoration: BoxDecoration(\r\n"
+                },
+                {
+                    "date": 1634034847280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,12 @@\n                 children: [\r\n                   CheckboxListTile(\r\n                     value: true,\r\n                     onChanged: null,\r\n-                    title: Text('data'),\r\n+                    title: Text(\r\n+                      'Buy tea',\r\n+                      style: TextStyle(color: Colors.black),\r\n+                    ),\r\n                   )\r\n                 ],\r\n               ),\r\n               decoration: BoxDecoration(\r\n"
+                },
+                {
+                    "date": 1634034861352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n               padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 15),\r\n               child: ListView(\r\n                 children: [\r\n                   CheckboxListTile(\r\n-                    value: true,\r\n+                    value: false,\r\n                     onChanged: null,\r\n                     title: Text(\r\n                       'Buy tea',\r\n                       style: TextStyle(color: Colors.black),\r\n"
+                },
+                {
+                    "date": 1634034884054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n             ),\r\n           ),\r\n           Expanded(\r\n             child: Container(\r\n-              padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 15),\r\n+              padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 15),\r\n               child: ListView(\r\n                 children: [\r\n                   CheckboxListTile(\r\n                     value: false,\r\n"
+                },
+                {
+                    "date": 1634034896639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,16 @@\n                       'Buy tea',\r\n                       style: TextStyle(color: Colors.black),\r\n                     ),\r\n                   )\r\n+                  CheckboxListTile(\r\n+                    value: false,\r\n+                    onChanged: null,\r\n+                    title: Text(\r\n+                      'Buy tea',\r\n+                      style: TextStyle(color: Colors.black),\r\n+                    ),\r\n+                  )\r\n                 ],\r\n               ),\r\n               decoration: BoxDecoration(\r\n                   color: Colors.white,\r\n"
+                },
+                {
+                    "date": 1634034905244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,14 +62,14 @@\n                     title: Text(\r\n                       'Buy tea',\r\n                       style: TextStyle(color: Colors.black),\r\n                     ),\r\n-                  )\r\n+                  ),\r\n                   CheckboxListTile(\r\n                     value: false,\r\n                     onChanged: null,\r\n                     title: Text(\r\n-                      'Buy tea',\r\n+                      'Buy ',\r\n                       style: TextStyle(color: Colors.black),\r\n                     ),\r\n                   )\r\n                 ],\r\n"
+                },
+                {
+                    "date": 1634035136874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,24 +86,4 @@\n       ),\r\n     );\r\n   }\r\n }\r\n-\r\n-class CheckRow extends StatelessWidget {\r\n-  final String text;\r\n-  CheckRow({required this.text});\r\n-\r\n-  @override\r\n-  Widget build(BuildContext context) {\r\n-    return Padding(\r\n-      padding: const EdgeInsets.symmetric(vertical: 8),\r\n-      child: Row(\r\n-        mainAxisAlignment: MainAxisAlignment.start,\r\n-        crossAxisAlignment: CrossAxisAlignment.start,\r\n-        children: [\r\n-          Flexible(flex: 3, fit: FlexFit.tight, child: Text(text)),\r\n-          Flexible(flex: 1, child: Checkbox(value: true, onChanged: null)),\r\n-        ],\r\n-      ),\r\n-    );\r\n-  }\r\n-}\r\n"
+                },
+                {
+                    "date": 1634035610391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:flutter/material.dart';\r\n+import 'package:todolist_flutter/widgets/task_list.dart';\r\n \r\n class TaskScreen extends StatelessWidget {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n@@ -53,28 +54,9 @@\n           ),\r\n           Expanded(\r\n             child: Container(\r\n               padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 15),\r\n-              child: ListView(\r\n-                children: [\r\n-                  CheckboxListTile(\r\n-                    value: false,\r\n-                    onChanged: null,\r\n-                    title: Text(\r\n-                      'Buy tea',\r\n-                      style: TextStyle(color: Colors.black),\r\n-                    ),\r\n-                  ),\r\n-                  CheckboxListTile(\r\n-                    value: false,\r\n-                    onChanged: null,\r\n-                    title: Text(\r\n-                      'Buy ',\r\n-                      style: TextStyle(color: Colors.black),\r\n-                    ),\r\n-                  )\r\n-                ],\r\n-              ),\r\n+              child: TaskList(),\r\n               decoration: BoxDecoration(\r\n                   color: Colors.white,\r\n                   borderRadius: BorderRadius.only(\r\n                     topLeft: Radius.circular(15),\r\n"
+                },
+                {
+                    "date": 1634035646650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,14 @@\n import 'package:flutter/material.dart';\r\n import 'package:todolist_flutter/widgets/task_list.dart';\r\n \r\n-class TaskScreen extends StatelessWidget {\r\n+class TaskScreen extends StatefulWidget {\r\n   @override\r\n+  _TaskScreenState createState() => _TaskScreenState();\r\n+}\r\n+\r\n+class _TaskScreenState extends State<TaskScreen> {\r\n+  @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       floatingActionButton: FloatingActionButton(\r\n         backgroundColor: Colors.lightBlueAccent,\r\n"
+                }
+            ],
+            "date": 1633953115408,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nclass TaskScreen extends StatelessWidget {\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Container();\r\n  }\r\n}\r\n"
+        }
+    ]
+}
