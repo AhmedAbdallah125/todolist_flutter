@@ -1,0 +1,38 @@
+{
+    "sourceFile": "lib/model/task.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1634285999559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1634286094320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,10 @@\n class Task {\r\n   final String name;\r\n   bool isDone;\r\n-  Task({ required this.name,this.isDone=false})\r\n+  // make isDone has default value at starting\r\n+  Task(String name){\r\n+    this.name=name;\r\n+    isDone=false;\r\n+  };\r\n+\r\n }\r\n"
+                },
+                {
+                    "date": 1634286111921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class Task {\r\n   final String name;\r\n   bool isDone;\r\n   // make isDone has default value at starting\r\n-  Task(String name){\r\n+  Task(required String name){\r\n     this.name=name;\r\n     isDone=false;\r\n   };\r\n \r\n"
+                },
+                {
+                    "date": 1634286732085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,6 @@\n class Task {\r\n   final String name;\r\n   bool isDone;\r\n   // make isDone has default value at starting\r\n-  Task(required String name){\r\n-    this.name=name;\r\n-    isDone=false;\r\n-  };\r\n-\r\n+  Task({required this.name, this.isDone = false});\r\n }\r\n"
+                },
+                {
+                    "date": 1634286789930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,9 @@\n   final String name;\r\n   bool isDone;\r\n   // make isDone has default value at starting\r\n   Task({required this.name, this.isDone = false});\r\n+  // make method that change state of checkbox each clicked\r\n+  void toggleDone() {\r\n+    name = !name;\r\n+  }\r\n }\r\n"
+                },
+                {
+                    "date": 1634286821491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   // make isDone has default value at starting\r\n   Task({required this.name, this.isDone = false});\r\n   // make method that change state of checkbox each clicked\r\n   void toggleDone() {\r\n-    name = !name;\r\n+    isDone = !isDone;\r\n   }\r\n }\r\n"
+                }
+            ],
+            "date": 1634285999559,
+            "name": "Commit-0",
+            "content": "class Task {\r\n  final String name;\r\n  bool isDone;\r\n  Task({ required this.name,this.isDone=false})\r\n}\r\n"
+        }
+    ]
+}

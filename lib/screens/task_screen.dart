@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:todolist_flutter/widgets/task_list.dart';
 
-class TaskScreen extends StatefulWidget {
-  @override
-  _TaskScreenState createState() => _TaskScreenState();
-}
+import 'add-task.dart';
 
-class _TaskScreenState extends State<TaskScreen> {
+class TaskScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.lightBlueAccent,
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(
+              context: context,
+              // using arrow fun -- single line
+              // anormous fun --> no named
+              // context from upper
+              builder: (context) => AddTask());
+        },
         child: Icon(
           Icons.add,
           size: 40,

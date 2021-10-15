@@ -3,11 +3,99 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 22,
             "patches": [
                 {
                     "date": 1634035625638,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1634036611597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,27 @@\n     return ListView(\r\n       children: [\r\n         TaskTile(),\r\n         TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1634036623353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,27 +12,8 @@\n     return ListView(\r\n       children: [\r\n         TaskTile(),\r\n         TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1634221946440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,14 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return ListView(\r\n       children: [\r\n-        TaskTile(),\r\n-        TaskTile(),\r\n+        TaskTile(\r\n+          taskText: 'get milk',\r\n+        ),\r\n+        TaskTile(\r\n+          taskText: 'get Milk',\r\n+        ),\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1634222210969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,14 +10,10 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return ListView(\r\n       children: [\r\n-        TaskTile(\r\n-          taskText: 'get milk',\r\n-        ),\r\n-        TaskTile(\r\n-          taskText: 'get Milk',\r\n-        ),\r\n+        TaskTile(),\r\n+        TaskTile(),\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1634286924661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,19 @@\n import 'package:flutter/material.dart';\r\n \r\n import 'task_tile.dart';\r\n \r\n-class TaskList extends StatelessWidget {\r\n+class TaskList extends StatefulWidget {\r\n   const TaskList({\r\n     Key? key,\r\n   }) : super(key: key);\r\n \r\n   @override\r\n+  _TaskListState createState() => _TaskListState();\r\n+}\r\n+\r\n+class _TaskListState extends State<TaskList> {\r\n+  @override\r\n   Widget build(BuildContext context) {\r\n     return ListView(\r\n       children: [\r\n         TaskTile(),\r\n"
+                },
+                {
+                    "date": 1634286969110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:flutter/material.dart';\r\n+import 'package:todolist_flutter/model/task.dart';\r\n \r\n import 'task_tile.dart';\r\n \r\n class TaskList extends StatefulWidget {\r\n@@ -11,8 +12,10 @@\n   _TaskListState createState() => _TaskListState();\r\n }\r\n \r\n class _TaskListState extends State<TaskList> {\r\n+  // make list of tasks class\r\n+  List<Task> tasks = [];\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return ListView(\r\n       children: [\r\n"
+                },
+                {
+                    "date": 1634287053025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,13 @@\n }\r\n \r\n class _TaskListState extends State<TaskList> {\r\n   // make list of tasks class\r\n-  List<Task> tasks = [];\r\n+  List<Task> tasks = [\r\n+    Task(name: 'Buy milk'),\r\n+    Task(name: 'Buy tea'),\r\n+    Task(name: 'play ball')\r\n+  ];\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return ListView(\r\n       children: [\r\n"
+                },
+                {
+                    "date": 1634287687147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,13 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return ListView(\r\n       children: [\r\n+        TaskTile(\r\n+          taskName: tasks[0].name,\r\n+          isChcekd: tasks[0].isDone,\r\n+        ),\r\n         TaskTile(),\r\n-        TaskTile(),\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1634287701469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,12 @@\n         TaskTile(\r\n           taskName: tasks[0].name,\r\n           isChcekd: tasks[0].isDone,\r\n         ),\r\n-        TaskTile(),\r\n+        TaskTile(\r\n+          taskName: tasks[1].name,\r\n+          isChcekd: tasks[1].isDone,\r\n+        ),\r\n       ],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1634289767519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,18 +20,12 @@\n     Task(name: 'play ball')\r\n   ];\r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return ListView(\r\n-      children: [\r\n-        TaskTile(\r\n-          taskName: tasks[0].name,\r\n-          isChcekd: tasks[0].isDone,\r\n-        ),\r\n-        TaskTile(\r\n-          taskName: tasks[1].name,\r\n-          isChcekd: tasks[1].isDone,\r\n-        ),\r\n-      ],\r\n-    );\r\n+    return ListView.builder(\r\n+        itemBuilder: (context, index) {\r\n+          return TaskTile(\r\n+              taskName: tasks[index].name, isChcekd: tasks[index].isDone);\r\n+        },\r\n+        itemCount: tasks.length);\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1634310191678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n   _TaskListState createState() => _TaskListState();\r\n }\r\n \r\n class _TaskListState extends State<TaskList> {\r\n+  bool? isChecked;\r\n   // make list of tasks class\r\n   List<Task> tasks = [\r\n     Task(name: 'Buy milk'),\r\n     Task(name: 'Buy tea'),\r\n"
+                },
+                {
+                    "date": 1634310367974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,21 @@\n }\r\n \r\n class _TaskListState extends State<TaskList> {\r\n   bool? isChecked;\r\n+\r\n+void changeChec(bool? newValue) {\r\n+            setState(() {\r\n+              isChecked = newValue!;\r\n+            });\r\n+          },\r\n+  /*\r\n+(bool? newValue) {\r\n+            setState(() {\r\n+              isChcekd = newValue!;\r\n+            });\r\n+          },\r\n+*/\r\n   // make list of tasks class\r\n   List<Task> tasks = [\r\n     Task(name: 'Buy milk'),\r\n     Task(name: 'Buy tea'),\r\n"
+                },
+                {
+                    "date": 1634310375951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,13 +14,14 @@\n \r\n class _TaskListState extends State<TaskList> {\r\n   bool? isChecked;\r\n \r\n-void changeChec(bool? newValue) {\r\n-            setState(() {\r\n-              isChecked = newValue!;\r\n-            });\r\n-          },\r\n+  void changeChec(bool? newValue) {\r\n+    setState(() {\r\n+      isChecked = newValue!;\r\n+    });\r\n+  }\r\n+\r\n   /*\r\n (bool? newValue) {\r\n             setState(() {\r\n               isChcekd = newValue!;\r\n"
+                },
+                {
+                    "date": 1634310518694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,12 @@\n   Widget build(BuildContext context) {\r\n     return ListView.builder(\r\n         itemBuilder: (context, index) {\r\n           return TaskTile(\r\n-              taskName: tasks[index].name, isChcekd: tasks[index].isDone);\r\n+            taskName: tasks[index].name,\r\n+            isChcekd: tasks[index].isDone,\r\n+            chane: changeChec,\r\n+          );\r\n         },\r\n         itemCount: tasks.length);\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1634310582453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   _TaskListState createState() => _TaskListState();\r\n }\r\n \r\n class _TaskListState extends State<TaskList> {\r\n-  bool? isChecked;\r\n+  bool isChecked = false;\r\n \r\n   void changeChec(bool? newValue) {\r\n     setState(() {\r\n       isChecked = newValue!;\r\n"
+                },
+                {
+                    "date": 1634310740144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,12 +37,14 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return ListView.builder(\r\n         itemBuilder: (context, index) {\r\n-          return TaskTile(\r\n-            taskName: tasks[index].name,\r\n-            isChcekd: tasks[index].isDone,\r\n-            chane: changeChec,\r\n+          return GestureDetector(\r\n+            child: TaskTile(\r\n+              taskName: tasks[index].name,\r\n+              isChcekd: tasks[index].isDone,\r\n+              chane: changeChec,\r\n+            ),\r\n           );\r\n         },\r\n         itemCount: tasks.length);\r\n   }\r\n"
+                },
+                {
+                    "date": 1634310865994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,11 @@\n   Widget build(BuildContext context) {\r\n     return ListView.builder(\r\n         itemBuilder: (context, index) {\r\n           return GestureDetector(\r\n+            onTap: () {\r\n+              tasks[index].toggleDone();\r\n+            },\r\n             child: TaskTile(\r\n               taskName: tasks[index].name,\r\n               isChcekd: tasks[index].isDone,\r\n               chane: changeChec,\r\n"
+                },
+                {
+                    "date": 1634310913752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,13 @@\n             },\r\n             child: TaskTile(\r\n               taskName: tasks[index].name,\r\n               isChcekd: tasks[index].isDone,\r\n-              chane: changeChec,\r\n+              chane: (bool? newValue) {\r\n+                setState(() {\r\n+                  tasks[index].isDone = newValue!;\r\n+                });\r\n+              },\r\n             ),\r\n           );\r\n         },\r\n         itemCount: tasks.length);\r\n"
+                },
+                {
+                    "date": 1634310986130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,11 +38,9 @@\n   Widget build(BuildContext context) {\r\n     return ListView.builder(\r\n         itemBuilder: (context, index) {\r\n           return GestureDetector(\r\n-            onTap: () {\r\n-              tasks[index].toggleDone();\r\n-            },\r\n+            onTap: () {},\r\n             child: TaskTile(\r\n               taskName: tasks[index].name,\r\n               isChcekd: tasks[index].isDone,\r\n               chane: (bool? newValue) {\r\n"
+                },
+                {
+                    "date": 1634310999227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,19 +37,16 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return ListView.builder(\r\n         itemBuilder: (context, index) {\r\n-          return GestureDetector(\r\n-            onTap: () {},\r\n-            child: TaskTile(\r\n-              taskName: tasks[index].name,\r\n-              isChcekd: tasks[index].isDone,\r\n-              chane: (bool? newValue) {\r\n-                setState(() {\r\n-                  tasks[index].isDone = newValue!;\r\n-                });\r\n-              },\r\n-            ),\r\n+          return TaskTile(\r\n+            taskName: tasks[index].name,\r\n+            isChcekd: tasks[index].isDone,\r\n+            chane: (bool? newValue) {\r\n+              setState(() {\r\n+                tasks[index].isDone = newValue!;\r\n+              });\r\n+            },\r\n           );\r\n         },\r\n         itemCount: tasks.length);\r\n   }\r\n"
+                },
+                {
+                    "date": 1634313170717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n         itemBuilder: (context, index) {\r\n           return TaskTile(\r\n             taskName: tasks[index].name,\r\n             isChcekd: tasks[index].isDone,\r\n-            chane: (bool? newValue) {\r\n+            changeStateCallBack: (bool? newValue) {\r\n               setState(() {\r\n                 tasks[index].isDone = newValue!;\r\n               });\r\n             },\r\n"
+                },
+                {
+                    "date": 1634313199638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n             taskName: tasks[index].name,\r\n             isChcekd: tasks[index].isDone,\r\n             changeStateCallBack: (bool? newValue) {\r\n               setState(() {\r\n-                tasks[index].isDone = newValue!;\r\n+                tasks[index].toggleDone();\r\n               });\r\n             },\r\n           );\r\n         },\r\n"
                 }
             ],
             "date": 1634035625638,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 145,
+            "activePatchIndex": 171,
             "patches": [
                 {
                     "date": 1633953115408,
@@ -588,6 +588,110 @@
                 {
                     "date": 1634035646650,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,14 @@\n import 'package:flutter/material.dart';\r\n import 'package:todolist_flutter/widgets/task_list.dart';\r\n \r\n-class TaskScreen extends StatelessWidget {\r\n+class TaskScreen extends StatefulWidget {\r\n   @override\r\n+  _TaskScreenState createState() => _TaskScreenState();\r\n+}\r\n+\r\n+class _TaskScreenState extends State<TaskScreen> {\r\n+  @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       floatingActionButton: FloatingActionButton(\r\n         backgroundColor: Colors.lightBlueAccent,\r\n"
+                },
+                {
+                    "date": 1634043205789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,18 @@\n import 'package:flutter/material.dart';\r\n import 'package:todolist_flutter/widgets/task_list.dart';\r\n \r\n-class TaskScreen extends StatefulWidget {\r\n+class TaskScreen extends StatelessWidget {\r\n   @override\r\n-  _TaskScreenState createState() => _TaskScreenState();\r\n-}\r\n-\r\n-class _TaskScreenState extends State<TaskScreen> {\r\n-  @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n       floatingActionButton: FloatingActionButton(\r\n         backgroundColor: Colors.lightBlueAccent,\r\n-        onPressed: () {},\r\n+        onPressed: () {\r\n+          showModalBottomSheet(context: context, builder: (){\r\n+            return Container();\r\n+          })\r\n+        },\r\n         child: Icon(\r\n           Icons.add,\r\n           size: 40,\r\n         ),\r\n"
+                },
+                {
+                    "date": 1634043234065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,13 @@\n     return Scaffold(\r\n       floatingActionButton: FloatingActionButton(\r\n         backgroundColor: Colors.lightBlueAccent,\r\n         onPressed: () {\r\n-          showModalBottomSheet(context: context, builder: (){\r\n-            return Container();\r\n-          })\r\n+          showModalBottomSheet(\r\n+              context: context,\r\n+              builder: (context) {\r\n+                return Container();\r\n+              });\r\n         },\r\n         child: Icon(\r\n           Icons.add,\r\n           size: 40,\r\n"
+                },
+                {
+                    "date": 1634043484163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,13 @@\n         onPressed: () {\r\n           showModalBottomSheet(\r\n               context: context,\r\n               builder: (context) {\r\n-                return Container();\r\n+                return Container(\r\n+                  decoration: BoxDecoration(\r\n+                      borderRadius:\r\n+                          BorderRadius.only(topLeft: Radius.circular(18.0))),\r\n+                );\r\n               });\r\n         },\r\n         child: Icon(\r\n           Icons.add,\r\n"
+                },
+                {
+                    "date": 1634043503407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n               builder: (context) {\r\n                 return Container(\r\n                   decoration: BoxDecoration(\r\n                       borderRadius:\r\n-                          BorderRadius.only(topLeft: Radius.circular(18.0))),\r\n+                          BorderRadius.only(topLeft: Radius.circular(18.0),topRight: Radius.circular(18.0))),),\r\n                 );\r\n               });\r\n         },\r\n         child: Icon(\r\n"
+                },
+                {
+                    "date": 1634043537096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,12 @@\n               context: context,\r\n               builder: (context) {\r\n                 return Container(\r\n                   decoration: BoxDecoration(\r\n-                      borderRadius:\r\n-                          BorderRadius.only(topLeft: Radius.circular(18.0),topRight: Radius.circular(18.0))),),\r\n+                    borderRadius: BorderRadius.only(\r\n+                        topLeft: Radius.circular(18.0),\r\n+                        topRight: Radius.circular(18)),\r\n+                  ),\r\n                 );\r\n               });\r\n         },\r\n         child: Icon(\r\n"
+                },
+                {
+                    "date": 1634043573806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n               context: context,\r\n               builder: (context) {\r\n                 return Container(\r\n                   decoration: BoxDecoration(\r\n+                    color: Colors.amber,\r\n                     borderRadius: BorderRadius.only(\r\n                         topLeft: Radius.circular(18.0),\r\n                         topRight: Radius.circular(18)),\r\n                   ),\r\n"
+                },
+                {
+                    "date": 1634043686835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                 return Container(\r\n                   decoration: BoxDecoration(\r\n                     color: Colors.amber,\r\n                     borderRadius: BorderRadius.only(\r\n-                        topLeft: Radius.circular(18.0),\r\n+                        topLeft: Radius.circular(30.0),\r\n                         topRight: Radius.circular(18)),\r\n                   ),\r\n                 );\r\n               });\r\n"
+                },
+                {
+                    "date": 1634043699312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,12 +12,11 @@\n               context: context,\r\n               builder: (context) {\r\n                 return Container(\r\n                   decoration: BoxDecoration(\r\n-                    color: Colors.amber,\r\n                     borderRadius: BorderRadius.only(\r\n                         topLeft: Radius.circular(30.0),\r\n-                        topRight: Radius.circular(18)),\r\n+                        topRight: Radius.circular(30)),\r\n                   ),\r\n                 );\r\n               });\r\n         },\r\n"
+                },
+                {
+                    "date": 1634045055604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n           showModalBottomSheet(\r\n               context: context,\r\n               builder: (context) {\r\n                 return Container(\r\n+                  height: MediaQuery.of(context).size.height / 4,\r\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.only(\r\n                         topLeft: Radius.circular(30.0),\r\n                         topRight: Radius.circular(30)),\r\n"
+                },
+                {
+                    "date": 1634045066123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n           showModalBottomSheet(\r\n               context: context,\r\n               builder: (context) {\r\n                 return Container(\r\n-                  height: MediaQuery.of(context).size.height / 4,\r\n+                  height: MediaQuery.of(context).size.height / 3,\r\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.only(\r\n                         topLeft: Radius.circular(30.0),\r\n                         topRight: Radius.circular(30)),\r\n"
+                },
+                {
+                    "date": 1634045072550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n           showModalBottomSheet(\r\n               context: context,\r\n               builder: (context) {\r\n                 return Container(\r\n-                  height: MediaQuery.of(context).size.height / 3,\r\n+                  height: MediaQuery.of(context).size.height / 2,\r\n                   decoration: BoxDecoration(\r\n                     borderRadius: BorderRadius.only(\r\n                         topLeft: Radius.circular(30.0),\r\n                         topRight: Radius.circular(30)),\r\n"
+                },
+                {
+                    "date": 1634045105310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n               builder: (context) {\r\n                 return Container(\r\n                   height: MediaQuery.of(context).size.height / 2,\r\n                   decoration: BoxDecoration(\r\n+                    border: Border.all(),\r\n                     borderRadius: BorderRadius.only(\r\n                         topLeft: Radius.circular(30.0),\r\n                         topRight: Radius.circular(30)),\r\n                   ),\r\n"
+                },
+                {
+                    "date": 1634045266629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,14 +12,8 @@\n               context: context,\r\n               builder: (context) {\r\n                 return Container(\r\n                   height: MediaQuery.of(context).size.height / 2,\r\n-                  decoration: BoxDecoration(\r\n-                    border: Border.all(),\r\n-                    borderRadius: BorderRadius.only(\r\n-                        topLeft: Radius.circular(30.0),\r\n-                        topRight: Radius.circular(30)),\r\n-                  ),\r\n                 );\r\n               });\r\n         },\r\n         child: Icon(\r\n"
+                },
+                {
+                    "date": 1634045277338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n           showModalBottomSheet(\r\n               context: context,\r\n               builder: (context) {\r\n                 return Container(\r\n-                  height: MediaQuery.of(context).size.height / 2,\r\n+                  height: MediaQuery.of(context).size.height,\r\n                 );\r\n               });\r\n         },\r\n         child: Icon(\r\n"
+                },
+                {
+                    "date": 1634045334896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,9 @@\n         onPressed: () {\r\n           showModalBottomSheet(\r\n               context: context,\r\n               builder: (context) {\r\n-                return Container(\r\n-                  height: MediaQuery.of(context).size.height,\r\n-                );\r\n+                return Container();\r\n               });\r\n         },\r\n         child: Icon(\r\n           Icons.add,\r\n"
+                },
+                {
+                    "date": 1634045422027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,11 @@\n         backgroundColor: Colors.lightBlueAccent,\r\n         onPressed: () {\r\n           showModalBottomSheet(\r\n               context: context,\r\n-              builder: (context) {\r\n-                return Container();\r\n-              });\r\n+              builder: (context) =>\r\n+           Container()\r\n+              \r\n         },\r\n         child: Icon(\r\n           Icons.add,\r\n           size: 40,\r\n"
+                },
+                {
+                    "date": 1634045450081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,11 @@\n       floatingActionButton: FloatingActionButton(\r\n         backgroundColor: Colors.lightBlueAccent,\r\n         onPressed: () {\r\n           showModalBottomSheet(\r\n+              // using arrow fun -- single line\r\n               context: context,\r\n-              builder: (context) =>\r\n-           Container()\r\n-              \r\n+              builder: (context) => Container());\r\n         },\r\n         child: Icon(\r\n           Icons.add,\r\n           size: 40,\r\n"
+                },
+                {
+                    "date": 1634045494394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n       floatingActionButton: FloatingActionButton(\r\n         backgroundColor: Colors.lightBlueAccent,\r\n         onPressed: () {\r\n           showModalBottomSheet(\r\n-              // using arrow fun -- single line\r\n-              context: context,\r\n+              context: context, // using arrow fun -- single line\r\n+// anormous fun --> no named\r\n               builder: (context) => Container());\r\n         },\r\n         child: Icon(\r\n           Icons.add,\r\n"
+                },
+                {
+                    "date": 1634045502259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,11 @@\n       floatingActionButton: FloatingActionButton(\r\n         backgroundColor: Colors.lightBlueAccent,\r\n         onPressed: () {\r\n           showModalBottomSheet(\r\n-              context: context, // using arrow fun -- single line\r\n-// anormous fun --> no named\r\n+              context: context,\r\n+              // using arrow fun -- single line\r\n+              // anormous fun --> no named\r\n               builder: (context) => Container());\r\n         },\r\n         child: Icon(\r\n           Icons.add,\r\n"
+                },
+                {
+                    "date": 1634045528802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n           showModalBottomSheet(\r\n               context: context,\r\n               // using arrow fun -- single line\r\n               // anormous fun --> no named\r\n-              builder: (context) => Container());\r\n+              builder: (BuildContext context) => Container());\r\n         },\r\n         child: Icon(\r\n           Icons.add,\r\n           size: 40,\r\n"
+                },
+                {
+                    "date": 1634045546430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n           showModalBottomSheet(\r\n               context: context,\r\n               // using arrow fun -- single line\r\n               // anormous fun --> no named\r\n-              builder: (BuildContext context) => Container());\r\n+              builder: (context) => Container());\r\n         },\r\n         child: Icon(\r\n           Icons.add,\r\n           size: 40,\r\n"
+                },
+                {
+                    "date": 1634046427138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,12 @@\n           showModalBottomSheet(\r\n               context: context,\r\n               // using arrow fun -- single line\r\n               // anormous fun --> no named\r\n-              builder: (context) => Container());\r\n+              // context from upper\r\n+              builder: (context) => Container(\r\n+                    color: Color(0xffE3E3E3),\r\n+                  ));\r\n         },\r\n         child: Icon(\r\n           Icons.add,\r\n           size: 40,\r\n"
+                },
+                {
+                    "date": 1634046557470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n               // using arrow fun -- single line\r\n               // anormous fun --> no named\r\n               // context from upper\r\n               builder: (context) => Container(\r\n-                    color: Color(0xffE3E3E3),\r\n+                    color: Color(0xff757575),\r\n                   ));\r\n         },\r\n         child: Icon(\r\n           Icons.add,\r\n"
+                },
+                {
+                    "date": 1634046690188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,14 @@\n               // anormous fun --> no named\r\n               // context from upper\r\n               builder: (context) => Container(\r\n                     color: Color(0xff757575),\r\n+                    child: Container(\r\n+                      decoration: BoxDecoration(\r\n+                          borderRadius: BorderRadius.only(\r\n+                              topLeft: Radius.circular(18),\r\n+                              topRight: Radius.circular(18))),\r\n+                    ),\r\n                   ));\r\n         },\r\n         child: Icon(\r\n           Icons.add,\r\n"
+                },
+                {
+                    "date": 1634046705933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n               builder: (context) => Container(\r\n                     color: Color(0xff757575),\r\n                     child: Container(\r\n                       decoration: BoxDecoration(\r\n+                          color: Colors.white,\r\n                           borderRadius: BorderRadius.only(\r\n                               topLeft: Radius.circular(18),\r\n                               topRight: Radius.circular(18))),\r\n                     ),\r\n"
+                },
+                {
+                    "date": 1634116889170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n import 'package:flutter/material.dart';\r\n import 'package:todolist_flutter/widgets/task_list.dart';\r\n \r\n+import 'add-task.dart';\r\n+\r\n class TaskScreen extends StatelessWidget {\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Scaffold(\r\n@@ -12,18 +14,9 @@\n               context: context,\r\n               // using arrow fun -- single line\r\n               // anormous fun --> no named\r\n               // context from upper\r\n-              builder: (context) => Container(\r\n-                    color: Color(0xff757575),\r\n-                    child: Container(\r\n-                      decoration: BoxDecoration(\r\n-                          color: Colors.white,\r\n-                          borderRadius: BorderRadius.only(\r\n-                              topLeft: Radius.circular(18),\r\n-                              topRight: Radius.circular(18))),\r\n-                    ),\r\n-                  ));\r\n+              builder: (context) => AddTask());\r\n         },\r\n         child: Icon(\r\n           Icons.add,\r\n           size: 40,\r\n"
                 }
             ],
             "date": 1633953115408,
